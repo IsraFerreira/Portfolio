@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault()
     
         emailjs
-          .sendForm('Gmail', 'template_rzpwmkd', form.current, 'DfCVnp4A9fBeJJEMg')
+          .sendForm('service_ncyhzk8', 'template_rzpwmkd', form.current, 'DfCVnp4A9fBeJJEMg')
           .then(
             () => {
               alert('Mensagem Enviada!')
