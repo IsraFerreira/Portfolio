@@ -2,7 +2,7 @@
     z-index: 0;
     width: 400px;
     height: 609px;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     right: 15%;
@@ -15,8 +15,9 @@
       height: auto;
       bottom: 0;
       transform: rotateZ(30deg) !important;
+      z-index: 1;
     }
-  
+
     .solid-logo {
       position: absolute;
       top: auto;
@@ -25,10 +26,13 @@
       left: 0;
       margin: auto;
       width: 100%;
-      opacity: 0;
+      opacity: 1;
       transform: rotateZ(30deg) !important;
-      z-index: 1;
+      z-index: 2;
+      animation: fadeIn 1.5s linear both;
+      animation-delay: 3s;
     }
+    
   }
   
   .svg-container {

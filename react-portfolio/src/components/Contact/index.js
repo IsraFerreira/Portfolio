@@ -18,19 +18,19 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault()
-    
+
         emailjs
-          .sendForm('service_ncyhzk8', 'template_rzpwmkd', form.current, 'DfCVnp4A9fBeJJEMg')
-          .then(
-            () => {
-              alert('Mensagem Enviada!')
-              window.location.reload(true)
-            },
-            () => {
-              alert('Falha ao enviar a mensagem, por favor tente novamente')
-            }
-          )
-      }
+            .sendForm('service_ncyhzk8', 'template_rzpwmkd', form.current, 'DfCVnp4A9fBeJJEMg')
+            .then(
+                () => {
+                    alert('Mensagem Enviada!')
+                    window.location.reload(true)
+                },
+                () => {
+                    alert('Falha ao enviar a mensagem, por favor tente novamente')
+                }
+            )
+    }
 
     return (
         <>
@@ -82,22 +82,44 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
+
+
+                <div id="containerCofee">
+                    <div class="steam" id="steam1"> </div>
+                    <div class="steam" id="steam2"> </div>
+                    <div class="steam" id="steam3"> </div>
+                    <div class="steam" id="steam4"> </div>
+
+                    <div id="cup">
+                        <div id="cup-body">
+                            <div id="cup-shade"></div>
+                        </div>
+                        <div id="cup-handle"></div>
+                    </div>
+
+                    <div id="saucer"></div>
+
+                    <div id="shadow"></div>
+                </div>
+
+
+
+
                 <div className="info-map">
                     Israel Silva,
                     <br />
-                    Brasil,
+                    Méier,
                     <br />
-                    Rua arquias Cordeiro, 210 <br />
-                    Méier <br />
+                    Brasil <br />
                     <br />
                     <span>israel.fnds@hotmail.com</span>
                 </div>
                 <div className="map-wrap">
                     <MapContainer center={[-22.903696, -43.275315]} zoom={17}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker position={[-22.903696, -43.275315]}>
+                        {/* <Marker position={[-22.903696, -43.275315]}>
                             <Popup>Israel mora aqui, venha para tomar um café :) </Popup>
-                        </Marker>
+                        </Marker> */}
                     </MapContainer>
                 </div>
             </div>

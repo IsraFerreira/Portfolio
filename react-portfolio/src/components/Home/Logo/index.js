@@ -12,29 +12,10 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img
-        className="solid-logo"
-        ref={solidLogoRef}
-        src={LogoS}
-        alt="JavaScript,  Developer"
-      />
-
-      <svg
-        width="559pt"
-        height="897pt"
-        version="1.0"
-        viewBox="0 0 559 897"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          className="svg-container"
-          transform="translate(0 897) scale(.1 -.1)"
-          fill="none"
-        >
-          <path
-            ref={outlineLogoRef}
-
-            d="M2040 8850 l-23 -110 -87 0 -86 0 -63 -287 c-35 -159 -65 -298 -68
+      <svg width="559pt" height="897pt" version="1.0" viewBox="0 0 559 897" xmlns="http://www.w3.org/2000/svg">
+        <g className="svg-container" transform="translate(0 897) scale(.1 -.1)" fill="none">
+          <path ref={outlineLogoRef}
+           d="M2040 8850 l-23 -110 -87 0 -86 0 -63 -287 c-35 -159 -65 -298 -68
 -310 -5 -22 -3 -23 78 -24 164 -1 948 -34 954 -41 4 -4 -1192 -7156 -1199
 -7165 -1 -1 -179 -10 -396 -19 -217 -9 -396 -18 -397 -19 -3 -1 -26 -116 -37
 -177 l-7 -38 -89 0 -89 0 -10 -52 c-6 -29 -31 -161 -56 -293 -25 -132 -47
@@ -72,6 +53,9 @@ m-844 -263 c-14 -51 -69 -363 -64 -368 3 -3 347 -1 764 4 1075 14 2114 3 2114
 l47 245 29 6 c17 4 49 7 73 8 37 1 43 -2 38 -16z"/>
         </g>
       </svg>
+      
+      <img className="solid-logo" ref={solidLogoRef} src={LogoS} alt="JavaScript,  Developer" />
+
     </div>
   )
 }
