@@ -1,6 +1,12 @@
 {
     "portfolio": [
         {
+            "cover": "/portfolio/1/pgnet.png",
+            "title": "Site PGNET",
+            "description": "JS, HTML, CSS",
+            "url": "https://pgnetinnt.com.br"
+        },
+        {
             "cover": "/portfolio/1/ds-movie.png",
             "title": "Projeto Avaliação de Filmes",
             "description": "React, Java, JS, HTML, CSS",
